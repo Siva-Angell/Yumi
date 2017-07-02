@@ -1,0 +1,19 @@
+{
+  "name": "yumi",
+  "version": "3.0.3_3",
+  "description": "",
+  "main": "Yumi.js",
+  "scripts": {
+    "test": "node Yumi.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YumiBot/Yumi.git"
+  },
+  "author": "AugvstxD",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YumiBot/Yumi/issues"
+  },
+  "homepage": "https://github.com/YumiBot/Yumi#readme"
+}
