@@ -2,11 +2,11 @@ var Yumi = require('discord.js');
 var yumi = new Yumi.Client();
 
 yumi.on('ready', () => {
-    ayane.user.setGame(`Ew Splashes || a;help || [${ayane.guilds.size}]`)
-    console.log("[Ayane-Ready] Hello :D")
+    ayane.user.setGame(`y/help | 404'ed it! | [${yumi.guilds.size} / ${yumi.users.size}]`)
+    console.log("Connected.")
 });
 
-var prefix = "a;";
+var prefix = "y/";
 yumi.on("message", msg => {
   if (msg.author.bot) return;
   if (!msg.content.startsWith(prefix)) return;
