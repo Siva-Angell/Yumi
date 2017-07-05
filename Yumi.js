@@ -1,5 +1,5 @@
-var Yumi = require('discord.js');
-var yumi = new Yumi.Client();
+var YumiCore = require('discord.js');
+var yumi = new YumiCore.Client();
 
 yumi.on('ready', () => {
     ayane.user.setGame(`y/help | 404'ed it! | [${yumi.guilds.size} / ${yumi.users.size}]`)
