@@ -6,7 +6,7 @@ minutes = parseInt((ayane.uptime / (1000 * 60)) % 60),
 hours = parseInt((ayane.uptime / (1000 * 60 * 60)) % 24);
 var uptime = "" + hours + " hrs, " + minutes + " mins and " + seconds + " seconds"
   let embed = new Discord.RichEmbed()
-    .setTitle("Ayane || Stats")
+    .setTitle("Yumi || Stats")
     .setDescription("Shows the typical stats.")
     .addField("Uptime since last restart", `${uptime}`)
     .addField("Prefix", `a;`)
