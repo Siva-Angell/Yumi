@@ -7,7 +7,7 @@ exports.run = function(ayane, msg) {
         var large_servers = ayane.guilds.filter(g => g.memberCount < 1000 && g.memberCount >= 500).size;
         var massive_servers = ayane.guilds.filter(g => g.memberCount < 5000 && g.memberCount >= 1000).size;
 	 let embed = new Discord.RichEmbed()
-	   .setTitle("Ayane | Server Sizes")
+	   .setTitle("Yumi | Server Sizes")
 	   .setDescription("nothing")
 	   .addField("Bot Farms:", `${bot_farms}`)
 	   .addField("Tiny Servers (<25):", `${tiny_servers}`)
