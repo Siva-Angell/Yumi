@@ -1,5 +1,5 @@
 exports.run = function(ayane, msg, args) {
-  if(msg.author.id != '280158289667555328') return msg.reply("Eval is only for Owner Only! Sorry!")
+  if(msg.author.id != '280158289667555328') return msg.reply("**You** Don't have permission to execute `Javascript` code.")
   try {
     const code = args.join(" ");
     let evaled = eval(code);
