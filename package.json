@@ -4,14 +4,15 @@
   "description": "",
   "main": "Yumi.js",
   "scripts": {
-    "test": "node Yumi.js"
+    "test": "node Yumi.js",
+    "start": "nose Sharder.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/YumiBot/Yumi.git"
   },
   "author": "AugvstxD",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/YumiBot/Yumi/issues"
   },
