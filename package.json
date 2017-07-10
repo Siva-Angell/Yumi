@@ -12,7 +12,7 @@
     "url": "git+https://github.com/YumiBot/Yumi.git"
   },
   "author": "AugvstxD",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/YumiBot/Yumi/issues"
   },
