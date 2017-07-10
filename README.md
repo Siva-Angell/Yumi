@@ -2,7 +2,7 @@
 Yumi is a revamped version of Ayane, so the code isn't complete for the most part.
 
 You can join the support server for more info and/or to talk & hangout.
-[![Join Yumi & Aoi Support Server](https://discordapp.com/api/guilds/332957805432799243/embed.png?style=banner3)](https://discord.gg/T2pyUvf)
+[![Join](https://discordapp.com/api/guilds/332957805432799243/embed.png?style=banner3)](https://discord.gg/T2pyUvf)
 
 ## Docs
 Go to [here](https://github.com/YumiBot/Yumi/wiki) for some docs.
