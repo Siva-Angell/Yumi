@@ -5,6 +5,7 @@
   "main": "Yumi.js",
   "scripts": {
     "test": "node Yumi.js"
+    "start": "nose Sharder.js"
   },
   "repository": {
     "type": "git",
