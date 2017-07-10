@@ -1,5 +1,6 @@
+const settings = require('../../settings.json');
 exports.run = function(ayane, msg, args) {
-  if(msg.author.id != '280158289667555328') return msg.reply("**You** Don't have permission to execute `Javascript` code.")
+if(!isDeveloper(msg.author.id)) return msg.reply("**You** Don't have permission to execute `Javascript` code.")
   try {
     const code = args.join(" ");
     let evaled = eval(code);
@@ -18,4 +19,10 @@ function clean(text) {
     return text.replace(/`/g, "`" + String.fromCharCode(8203)).replace(/@/g, "@" + String.fromCharCode(8203));
   else
       return text;
+}
+
+var devs = settings.devID
+
+function isDeveloper(id) {
+  return (devs.indexOf(id) > -1);
 }
