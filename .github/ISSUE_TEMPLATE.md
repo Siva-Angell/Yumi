@@ -17,6 +17,6 @@ List of steps:
 2. Errors in console! <3
 Command: moderation.ban
 ```
-Why the permission? How can I view it cx
-Go to [here](https://github.com/YumiBot/Yumi/wiki/Command-Documentation)
+Why the permission? How can I view it? cx
+Go [here](https://github.com/YumiBot/Yumi/wiki/Command-Documentation).
 If the link doesn't work, just tell me xD
