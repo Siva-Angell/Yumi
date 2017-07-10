@@ -4,14 +4,14 @@ This is where you can issue stuff on [here](https://github.com/YumiBot/Yumi/issu
 This is the template
 ```
 What is the issue?:
-How can staff occur the issue?:
+How can staff reciprocate the issue?:
 List of steps:
 Command:
 ```
 Example:
 ```
 What is the issue?: Ban doesn't work ;-;
-How can staff occur the issue?: By doing "y/ban" and it doesn't work ;_;
+How can staff reciprocate the issue?: By doing "y/ban" and it doesn't work ;_;
 List of steps:
 1. Do "y/ban"
 2. Errors in console! <3
