@@ -1,5 +1,5 @@
 const sql = require('sqlite')
-sql.open('../databases/database.sqlite')
+sql.open('./databases/database.sqlite')
 exports.run = function(ayane, msg) {
     sql.get(`SELECT * FROM database WHERE guildId ='${msg.guild.id}'`).then(row => {
     if (!row) {
