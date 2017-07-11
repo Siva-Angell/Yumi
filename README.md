@@ -7,8 +7,8 @@
 <h4 align="center">Just an general bot.</h4>
   <p align="center">
       <a href="https://discord.gg/TTAUGvZ" target="_blank"><img src="https://discordapp.com/api/guilds/332957805432799243/embed.png" alt="Discord"></a>
-    <a href="https://github.com/FlareBot/FlareBot/blob/master" target="_blank"><img src="https://img.shields.io/github/stars/AnAuguseh/YumiBot.svg?style=flat-square" alt="Github Stars"></a>
-    <a href="https://github.com/FlareBot/FlareBot/issues" target="_blank"><img src="https://img.shields.io/badge/Builds-undefined-b76e79.svg?style=flat-square" alt="Builds"></a>
+    <a href="https://github.com/AnAuguseh/YumiBot/blob/master" target="_blank"><img src="https://img.shields.io/github/stars/AnAuguseh/YumiBot.svg?style=flat-square" alt="Github Stars"></a>
+    <a href="" target="_blank"><img src="https://img.shields.io/badge/Builds-undefined-b76e79.svg?style=flat-square" alt="Builds"></a>
   </p>
   
 -------------------
