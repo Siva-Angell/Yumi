@@ -1,4 +1,4 @@
-# Yumi [![Twitter Follow](https://img.shields.io/twitter/follow/AyaneDiscord.svg?style=social&label=Follow)]()
+# Yumi [![Twitter Follow](https://img.shields.io/twitter/follow/AyaneDiscord.svg?style=social&label=Follow)]() [![Documentation Status](https://readthedocs.org/projects/yumibot/badge/?version=latest)](http://yumibot.readthedocs.io/en/latest/?badge=latest)
 Yumi is a revamped version of Ayane, so the code isn't complete for the most part.
 
 You can join the support server for more info and/or to talk & hangout.
