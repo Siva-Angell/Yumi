@@ -1,8 +1,23 @@
-# Yumi [![Twitter Follow](https://img.shields.io/twitter/follow/AyaneDiscord.svg?style=social&label=Follow)]() [![Documentation Status](https://readthedocs.org/projects/yumibot/badge/?version=latest)](http://yumibot.readthedocs.io/en/latest/?badge=latest)
+<h1 align="center">
+    <a href="https://discord.gg/T2pyUvf"><img src="https://cdn.discordapp.com/avatars/317145148901556234/8fc5eb2576e1632b38a0115c4e133fab.png?size=2048" width="256px" alt="Yumi"></a>
+  <br>
+    YumiBot
+  <br>
+ </h1>
+<h4 align="center">Just an general bot.</h4>
+  <p align="center">
+      <a href="https://discord.gg/TTAUGvZ" target="_blank"><img src="https://discordapp.com/api/guilds/332957805432799243/embed.png" alt="Discord"></a>
+    <a href="https://github.com/FlareBot/FlareBot/blob/master" target="_blank"><img src="https://img.shields.io/github/stars/AnAuguseh/YumiBot.svg?style=flat-square" alt="Github Stars"></a>
+    <a href="https://github.com/FlareBot/FlareBot/issues" target="_blank"><img src="https://img.shields.io/badge/Builds-undefined-b76e79.svg?style=flat-square" alt="Builds"></a>
+  </p>
+  
+-------------------
+
+# Yumi [![Twitter Follow](https://img.shields.io/twitter/follow/AyaneDiscord.svg?style=social&label=Follow)](https://twitter.com/AyaneDiscord) [![Documentation Status](https://readthedocs.org/projects/yumibot/badge/?version=latest)](http://yumibot.readthedocs.io/en/latest/?badge=latest)
 Yumi is a revamped version of Ayane, so the code isn't complete for the most part.
 
 You can join the support server for more info and/or to talk & hangout.
-[![Join](https://discordapp.com/api/guilds/332957805432799243/embed.png?style=banner3)](https://discord.gg/T2pyUvf)
+[![Join](https://discordapp.com/api/guilds/332957805432799243/embed.png?style=banner2)](https://discord.gg/T2pyUvf)
 
 ## Docs
 Go to [here](https://github.com/YumiBot/Yumi/wiki) for some docs.
