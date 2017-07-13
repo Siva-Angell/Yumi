@@ -1,10 +1,10 @@
 const YumiCore = require('discord.js');
-const settings = require('./settings.json');
+const settings = require('./src/Settings/settings.json');
 const yumi = new YumiCore.Client();
 
 yumi.on('ready', () => {
     yumi.user.setGame(`y/help  | Shard: ${yumi.shard.id} | [${yumi.guilds.size} / ${yumi.users.size}]`)
-    console.log("Ready mother fucker")
+    console.log("[Ready] Ready, now spamming logs.")
 });
 
 yumi.on("message", msg => {
@@ -15,7 +15,7 @@ yumi.on("message", msg => {
   const command = args.shift().slice(settings.prefix.length)
 
   try {
-    let commandFile = require(`./src/commands/${command}.js`)
+    let commandFile = require(`./src/Commands/${command}.js`)
     commandFile.run(yumi, msg, args)
   } catch (err) {
     console.error(err)
@@ -56,4 +56,4 @@ yumi.on('error', (e) => console.error(e));
 yumi.on("warn", (e) => console.warn(e));
 yumi.on('debug', (e) => console.info(e));
 
-yumi.login('TOKEN');
+yumi.login(settings.discord_token);
