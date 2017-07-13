@@ -25,11 +25,13 @@ yumi.on("message", msg => {
 yumi.on('guildCreate', guild => {
   postServerStats();
     yumi.channels.get('333638048283623435').send(`<:robotAdd:326804186262142977> **Joined** a guild!\n**Guild Name**: ${guild.name}!\n**Guild Owner**: ${guild.owner} (${guild.owner.id})`)
+    console.log("[Guild Create Triggered] Joined a server!")
 });
 
 yumi.on('guildDelete', guild => {
   postServerStats();
     yumi.channels.get('333638048283623435').send(`<:robotRemove:326804186932969472> **Left** a guild!\n**Guild Name**: ${guild.name}\n**Guild Owner**: ${guild.owner} (${guild.owner.id})`)
+    console.log("[Guild Delete Triggered] Left a server :<")
 });
 
 let snekfetch = require('snekfetch');
