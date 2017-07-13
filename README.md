@@ -16,7 +16,7 @@
 # Yumi [![Twitter Follow](https://img.shields.io/twitter/follow/AyaneDiscord.svg?style=social&label=Follow)](https://twitter.com/AyaneDiscord) [![Documentation Status](https://readthedocs.org/projects/yumibot/badge/?version=latest)](http://yumibot.readthedocs.io/en/latest/?badge=latest)
 Yumi is a revamped version of Ayane, so the code isn't complete for the most part.
 
-You can join the support server for more info and/or to talk & hangout.
+You can join the support server for more info and/or to talk & hangout, get fun / important announcements and everything! <3
 [![Join](https://discordapp.com/api/guilds/332957805432799243/embed.png?style=banner2)](https://discord.gg/T2pyUvf)
 
 ## Docs
