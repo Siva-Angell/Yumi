@@ -37,7 +37,7 @@ yumi.on('guildDelete', guild => {
 let snekfetch = require('snekfetch');
 function postServerStats() {
   // post to discordbots.org!
-  snekfetch.post(`https://discordbots.org/api/bots/317145148901556234/stats`)
+  snekfetch.post(`https://discordbots.org/api/bots/${yumi.user.id}/stats`)
     .set("Authorization", `dBotsToken`)
     .send({
       server_count: yumi.guilds.size
@@ -45,7 +45,7 @@ function postServerStats() {
     .then(console.log("Posted discordbots.org count."))
 
     // post to bots.discord.pw
-    snekfetch.post(`https://bots.discord.pw/api/bots/317145148901556234/stats`)
+    snekfetch.post(`https://bots.discord.pw/api/bots/${yumi.user.id}/stats`)
     .set("Authorization", `TOKEN`)
     .send({
       server_count: yumi.guilds.size
