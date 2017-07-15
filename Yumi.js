@@ -1,5 +1,5 @@
 const YumiCore = require('discord.js');
-const settings = require('./src/Settings/settings.json');
+const settings = require('./src/Settings/config.json');
 const yumi = new YumiCore.Client();
 
 yumi.on('ready', () => {
@@ -9,10 +9,10 @@ yumi.on('ready', () => {
 
 yumi.on("message", msg => {
   if (msg.author.bot) return;
-  if (!msg.content.startsWith(settings.prefix)) return;
+  if (!msg.content.startsWith(config.prefix)) return;
 
   const args = msg.content.split(" ");
-  const command = args.shift().slice(settings.prefix.length)
+  const command = args.shift().slice(config.prefix.length)
 
   try {
     let commandFile = require(`./src/Commands/${command}.js`)
