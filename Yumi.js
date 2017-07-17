@@ -1,27 +1,23 @@
 const { Client } = require('discord.js');
 const chalk = require('chalk');
 const config = require('./src/Settings/config.json');
-const client = new Client();
-
-client.on('ready', async() => {
-  client.user.setGame(`y/help | Shard: ${client.shard.id} | [${client.guilds.size} / ${client.users.size}]`)
-  console.log(chalk.blue('-----------------'))
-  console.log(chalk.green('Now loading stats about ' + client.user.username + ' (' + client.user.id + ')'))
-  console.log(chalk.yellow('Guilds on ' + client.shard.id + ',' + client.guilds.size + '.'))
-  console.log(chalk.yellow('Users on ' + client.shard.id + ',' + client.users.size + '.'))
-  console.log(chalk.green("Completed Stats, Now loading ping stats. I loaded the Sharder.js before! <3"))
+const PackageJSON = require('./package.json')
+const client = new Client({
+    disabledEvents:['TYPING_START', 'TYPING_STOP']
 });
 
-client.on('guildCreate', async(guild) => {
-    const guilds = await client.shard.fetchClientValues('guilds.size')
-    const count = guilds.reduce((prev, val) => prev + val, 0)
+client.on('ready', () => {
+  client.user.setGame(`y/help | Version: ${PackageJSON.version} | [${client.guilds.size} / ${client.users.size}]`)
+   console.log("Ready to serve " + client.guilds.size + " guilds with " + client.users.size + " users. I am on " + PackageJSON.version + " of Yumi! I really should update my github!")
+});
 
+const snekfetch = require('snekfetch');
+client.on('guildCreate', guild => {
     snekfetch
         .post('https://bots.discord.pw/api/bots/317145148901556234/stats')
         .set('Authorization', config.dBots)
         .send({
-            'server_count': count,
-            'shard_count': client.shard.count
+            'server_count': client.guilds.size,
         })
         .then(console.log('Updated dbots.pw status.'))
 
@@ -29,21 +25,18 @@ client.on('guildCreate', async(guild) => {
         .post('https://discordbots.org/api/bots/317145148901556234/stats')
         .set('Authorization', config.oliyBots)
         .send({
-            'server_count': count,
-            'shard_count': client.shard.count
+            'server_count': client.guilds.size,
         })
         .then(console.log('Updated dbots.org status.'))
+        client.channels.get('333638048283623435').send(`<:robotAdd:326804186262142977> **Joined** a guild!\n**Guild Name**: ${guild.name}!\n**Guild Owner**: ${guild.owner} (${guild.owner.id})`)
+        console.log("[Guild Create Triggered] Joined a server!")
 });
-client.on('guildDelete', async(guild) => {
-    const guilds = await client.shard.fetchClientValues('guilds.size')
-    const count = guilds.reduce((prev, val) => prev + val, 0)
-
+client.on('guildDelete', guild => {
     snekfetch
         .post('https://bots.discord.pw/api/bots/317145148901556234/stats')
         .set('Authorization', config.dBots)
         .send({
-            'server_count': count,
-            'shard_count': client.shard.count
+            'server_count': client.guilds.size
         })
         .then(console.log('Updated dbots.pw status.'))
 
@@ -51,20 +44,14 @@ client.on('guildDelete', async(guild) => {
         .post('https://discordbots.org/api/bots/317145148901556234/stats')
         .set('Authorization', config.oliyBots)
         .send({
-            'server_count': count,
-            'shard_count': client.shard.count
+            'server_count': client.guilds.size,
         })
         .then(console.log('Updated dbots.org status.'))
-        yumi.channels.get('333638048283623435').send(`<:robotAdd:326804186262142977> **Joined** a guild!\n**Guild Name**: ${guild.name}!\n**Guild Owner**: ${guild.owner} (${guild.owner.id})`)
+        client.channels.get('333638048283623435').send(`<:robotAdd:326804186262142977> **Joined** a guild!\n**Guild Name**: ${guild.name}!\n**Guild Owner**: ${guild.owner} (${guild.owner.id})`)
         console.log("[Guild Create Triggered] Joined a server!")
 });
 
-client.on('disconnect', (event) => {
-    console.log(`[Shard Disconnection] Shard ${client.shard.id} disconnected with Code ${event.code}.`);
-    process.exit(0);
-});
-
-client.on("message", async(msg) => {
+client.on("message", msg => {
   if (msg.author.bot) return;
   if (!msg.content.startsWith(config.prefix)) return;
 
@@ -73,7 +60,7 @@ client.on("message", async(msg) => {
 
   try {
     let commandFile = require(`./src/Commands/${command}.js`)
-    commandFile.run(yumi, msg, args)
+    commandFile.run(client, msg, args)
   } catch (err) {
     console.error(err)
   }
