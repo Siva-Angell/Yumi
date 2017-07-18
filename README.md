@@ -22,6 +22,13 @@ You can join the support server for more info, to talk & hangout, get fun/import
 ## Docs
 Go to [here](https://github.com/YumiBot/Yumi/wiki) for some docs.
 
+## Installation
+[@AnAuguseh](https://github.com/AnAuguseh) doesn't recommend of Installing Yumi for reasons...
+
+> IF YOU FUCK UP, DO NOT COMPLAIN, THAT'S YOUR FUCKING PROBLEM.
+
+Installation Docs will be soon
+
 ## License
 Yumi is a open source project, so she has the Apache 2.0 license!
 Click [here](https://github.com/YumiBot/Yumi/blob/master/LICENSE) to see the full license! <3
