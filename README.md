@@ -27,7 +27,7 @@ Go to [here](https://github.com/YumiBot/Yumi/wiki) for some docs.
 
 > IF YOU FUCK UP, DO NOT COMPLAIN, THAT'S YOUR FUCKING PROBLEM.
 
-Installation Docs will be soon
+Docs coming soon :3
 
 ## License
 Yumi is a open source project, so she has the Apache 2.0 license!
