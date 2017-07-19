@@ -25,7 +25,7 @@ Go to [here](https://github.com/YumiBot/Yumi/wiki) for some docs.
 ## Installation
 [@AnAuguseh](https://github.com/AnAuguseh) doesn't recommend of Installing Yumi for reasons...
 
-> IF YOU FUCK UP, DO NOT COMPLAIN, THAT'S YOUR FUCKING PROBLEM.
+> Note: If you end up messing up the installation, it is your own fault. We are not responsible for bots you compile yourself.
 
 Docs coming soon :3
 
