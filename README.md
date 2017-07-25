@@ -27,7 +27,12 @@ Go to [here](https://github.com/YumiBot/Yumi/wiki) for some docs.
 
 > Note: If you end up messing up the installation, it is your own fault. We are not responsible for bots you compile yourself.
 
-Docs coming soon :3
+We only have a Windows Installation completed & documented! If your a macOS fan & a Linux fan you can DM [@AnAuguseh](https://github.com/AnAuguseh) on Discord (Kanna (August)#1793) and tell him do document it!
+
+## Installation Docs
+* [Windows](https://github.com/AnAuguseh/YumiBot/wiki/Installation---Windows)
+
+Thanks for installing Yumi! <3
 
 ## License
 Yumi is a open source project, so she has the Apache 2.0 license!
