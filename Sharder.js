@@ -1,6 +1,15 @@
-let chalk = require('chalk');
-let Discord = require('discord.js');
-let Yumi = new Discord.Client();
-let Manager = new Discord.ShardingManager('./Yumi.js');
-Manager.spawn();
-console.log(chalk.green(`Filename: {${__filename}}: `, chalk.yellow(`Shard has been connected, now loading some shit.`)))
+const Dicksword = require('discord.js')
+
+const shard = new Dicksword.ShardingManager('./Yumi.js', {
+    token: "YOUR TOKEN" // Bitch you ain't stealing my token
+})
+
+shard.spawn();
+
+shard.on('launch', shard => {
+    console.log(`Shard ${shard.id} is alive`)
+})
+
+/*
+Credit to Melmsie xD
+*/
