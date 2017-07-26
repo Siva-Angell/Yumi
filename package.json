@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/YumiBot/Yumi/issues"
   },
-  "homepage": "https://github.com/YumiBot/Yumi#readme"
+  "homepage": "https://github.com/YumiBot/Yumi#readme",
+  "dependencies": {
+    "chalk": "^2.0.1"
+  }
 }
