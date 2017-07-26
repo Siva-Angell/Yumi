@@ -43,7 +43,8 @@ exports.run = function(client, msg, args) {
     let imgs = new Discord.RichEmbed()
       .setTitle(":frame_photo: Image")
       .setDescription("Shows image stuff commands!")
-      .addField('`y/hades`', "Description: C'mon! Defeat hades already~!")
+      .addField('`y/hades`', "Description: C'mon! Defeat hades already~!\nUsage: `y/hades [@MENTION | TAG]`")
+      .addField('`y/being-cute`', "Description: Wanna be cute to someone?\nUsage: `y/being-cute [@MENTION | TAG]`")
       .setFooter("More coming soon ;) <3")
     msg.channel.send({embed: imgs});
   }
