@@ -47,7 +47,7 @@ client.on('guildDelete', guild => {
             'server_count': client.guilds.size,
         })
         .then(console.log('Updated dbots.org status.'))
-        client.channels.get('333638048283623435').send(`<:robotAdd:326804186262142977> **Joined** a guild!\n**Guild Name**: ${guild.name}!\n**Guild Owner**: ${guild.owner.tag} (${guild.owner.id})`)
+        client.channels.get('333638048283623435').send(`<:robotAdd:326804186262142977> **Joined** a guild!\n**Guild Name**: ${guild.name}!\n**Guild Owner**: ${guild.owner.user.tag} (${guild.owner.id})`)
         console.log("[Guild Create Triggered] Joined a server!")
 });
 
