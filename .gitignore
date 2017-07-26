@@ -1,0 +1,5 @@
+#ignore so you don't accidentally commit personal stuff
+
+#Node Modules
+node_modules
+
