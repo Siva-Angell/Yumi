@@ -1,5 +1,5 @@
-const Kitsu                                 = require('kitsu.js');
-const kitsu                                 = new Kitsu();
+const Kitsu = require('kitsu.js');
+const kitsu = new Kitsu();
 exports.run = (client, msg, params) => {
     if (params.length < 1) return msg.reply('You must add a word to search for');
     msg.channel.send(":ok_hand: Fetching anime from Kitsu!").then(message => {
